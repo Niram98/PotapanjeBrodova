@@ -88,7 +88,7 @@ public class BattleShips {
     public static void battle (String[][] sea, int userShips, int compShips) {
         Scanner input = new Scanner(System.in);
         Random rand = new Random();
-        for (;;) {
+        while (true) {
             System.out.println("YOUR TURN");
             System.out.print("Enter X coordinate: ");
             int x = input.nextInt();
