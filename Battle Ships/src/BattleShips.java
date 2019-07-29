@@ -116,9 +116,9 @@ public class BattleShips {
             System.out.println("COMPUTER'S TURN");
             int x1 = rand.nextInt(10);
             int y1 = rand.nextInt(10);
-            while (x1 < 0 || x1 > 9 || y1 < 0 || y1 > 9 || sea[x1][y1].equals("-") || sea[x1][y1].equals("!") || sea[x1][y1].equals("x") || sea[x1][y1] == sea[x][y]) {
-                x1 = rand.nextInt();
-                y1 = rand.nextInt();
+            while (sea[x1][y1].equals("-") || sea[x1][y1].equals("!") || sea[x1][y1].equals("x") || sea[x1][y1] == sea[x][y]) {
+                x1 = rand.nextInt(10);
+                y1 = rand.nextInt(10);
             }
             if (sea[x1][y1] == "@") {
                 System.out.println("The Computer sunk one of your ships!");
